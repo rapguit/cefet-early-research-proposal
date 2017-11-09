@@ -32,13 +32,13 @@
 \maketitle
 
 \begin{abstract}
-   E-commerce websites use the A/B testing technique to decide how and what functionalities should be presented to end users, but this test does not identify the people profiles of who access the website, making it difficult to know the actual acceptance of the product for the desired audience.
-   This research project proposes the development of an application that aims to categorize and distinguish the user profiles that access the website by machine learning methods using extracted frequency patterns. That way the business owner is be able to direct their e-commerce to the desired target audience without suffering distortions of the general appearance. The counselor pleaded is Prof. Dr. Eduardo Bezerra da Silva with coorientation of Prof. Dr. Eduardo Soares Ogasawara whose research project is Data and Application Management and the line of research is the Applications in Deep Learning and Pattern Recognition.
+   E-commerce systems uses the A/B testing technique to decide how and what functionalities should be presented to end users, but this test does not identify the people profiles of who access the system, making it difficult to know the actual acceptance of the product for the desired audience. This research project proposes the development of a method that aims to identify the sets of characteristics more and less impacted by the variations of the tests, using machine learning methods under the frequent patterns extracted. These characteristics are used to create client clusters, leading to the customization of digital applications, applying the variation that works best for each client group. Thus, the business owner can direct their e-commerce to the desired target audience without suffering distortions of the overall appearance. The counselor pleaded is Prof. Dr. Eduardo Bezerra da Silva with coorientation of Prof. Dr. Eduardo Soares Ogasawara whose research project is Data and Application Management and the line of research is the Applications in Deep Learning and Pattern Recognition.
 \end{abstract}
      
 \begin{resumo} 
-  Em websites de comércio eletrônico utiliza-se a técnica de teste A/B para decidir como e quais funcionalidades serão apresentadas aos usuários finais, porém este teste não identifica os tipos de pessoas que acessam o website, dificultando saber a real aceitação do produto para o público desejado.
-  Este projeto de pesquisa propõe o desenvolvimento de uma aplicação que visa categorizar e distinguir os perfis de usuários que acessam o website usando métodos de aprendizado de máquina sob os padrões frequentes extraídos. Assim, o dono do negócio pode direcionar seu comércio eletrônico para o público-alvo desejado sem sofrer as distorções do aspecto geral. O orientador pleiteado é o Prof. Dr. Eduardo Bezerra da Silva com coorientação do Prof. Dr. Eduardo Soares Ogasawara cujo projeto de pesquisa é a Gerência de Dados e Aplicações e a linha de pesquisa é a Aplicações em Aprendizagem Profunda (Deep Learning) e Reconhecimento de Padrões.
+  Em sistemas de comércio eletrônico utiliza-se a técnica de teste A/B para decidir como e quais funcionalidades serão apresentadas aos usuários finais, porém este teste não identifica os tipos de pessoas que acessam o sistema, dificultando saber a real aceitação do produto para o público desejado.
+  Este projeto de pesquisa propõe o desenvolvimento de um método que visa identificar os conjuntos de características mais e menos impactados pelas variações dos testes, usando métodos de aprendizado de máquina sob os padrões frequentes extraídos.
+  Estas características são usadas para criar textit{clusters} de clientes, levando a personalização de aplicações digitais, aplicando a variação que funciona melhor para cada grupo de cliente. Assim, o dono do negócio pode direcionar seu comércio eletrônico para o público-alvo desejado sem sofrer as distorções do aspecto geral. O orientador pleiteado é o Prof. Dr. Eduardo Bezerra da Silva com coorientação do Prof. Dr. Eduardo Soares Ogasawara cujo projeto de pesquisa é a Gerência de Dados e Aplicações e a linha de pesquisa é a Aplicações em Aprendizagem Profunda (Deep Learning) e Reconhecimento de Padrões.
 \end{resumo}
 
 
@@ -57,7 +57,7 @@ O controle é normalmente a versão padrão e o tratamento é a versão que incl
 \label{fig:onlineExp1}
 \end{figure}
 
-O mapa \textit{heatmaps} destaca a influência do conteúdo da página onde as pessoas tendem a concentrar a visão, conforme a Figura \ref{fig:heatmap1}. Este é apenas alguns dos muitos métodos possíveis para entender as interações do usuário e desenvolver hipóteses para testes controlados. Estudos de tração ocular mostram como as pessoas guiam sua atenção em uma página \cite{goward:13}.
+O mapa \textit{heatmaps} destaca a influência do conteúdo de uma página página onde as pessoas tendem a concentrar a visão, conforme a Figura \ref{fig:heatmap1}. Este é apenas alguns dos muitos métodos possíveis para entender as interações do usuário e desenvolver hipóteses para testes controlados. Estudos de tração ocular mostram como as pessoas guiam sua atenção em uma página \cite{goward:13}.
 
 \begin{figure}[ht]
 \centering
@@ -66,15 +66,15 @@ O mapa \textit{heatmaps} destaca a influência do conteúdo da página onde as p
 \label{fig:heatmap1}
 \end{figure}
 
-Através das informações do teste A/B, mapa \textit{heatmaps} e outras provenientes dos dados de acesso capturados das entradas das requisições na página, como \textit{logs} das máquinas servidoras, podemos extrair, avaliar e categorizar automaticamente o perfil do usuário que acessa o \textit{website}.
+Através das informações do teste A/B, mapa \textit{heatmaps} e outras provenientes dos dados de acesso capturados das entradas no sistema, como \textit{logs} das máquinas servidoras, podemos extrair, avaliar e categorizar automaticamente características de quem acessa.
 
 Outras fontes de dados como a temperatura da cidade que o usuário está acessando, se está chovendo ou não, a hora do dia, a média da renda \textit{per capita} da região, se há algum acontecimento relevante no dia como eventos, shows ou notícias, pode influenciar também no processo de categorização.
 
-Após esta análise em \textit{Big Data} de todas essas entradas, será possível identificar quais os perfis de usuários que mais estão sendo influenciados positivamente ou negativamente, para a dada hipótese testada sobre as funcionalidades incluídas no \textit{website}.
+Após esta análise em \textit{Big Data} de todas essas entradas, será possível identificar quais os perfis de clientes que mais estão sendo influenciados positivamente ou negativamente, para a dada hipótese testada sobre as funcionalidades incluídas no sistema.
 
 \section{Objetivos}
 \subsection{Objetivo Geral}
-Desenvolver uma aplicação para interpretar os resultados dos testes A/B, classificando os usuários pelas características dos dados durante o acesso, auxiliando, assim, o dono do negócio a direcionar sua marca a um ou mais públicos-alvo.
+Desenvolver um método para interpretar os resultados dos testes A/B, classificando os usuários pelas características dos dados durante o acesso, auxiliando, assim, o dono do negócio a direcionar sua marca a um ou mais públicos-alvo.
 
 \subsection{Objetivo Específico}
 \begin{itemize}
@@ -87,21 +87,21 @@ Desenvolver uma aplicação para interpretar os resultados dos testes A/B, class
 
 A metodologia científica compreende basicamente um conjunto de dados iniciais e um sistema de operações ordenadas adequado para a formulação de conclusões, de acordo com certos objetivos predeterminantes \cite{tartuce:2006}.
 
-Sendo assim, com o objetivo final da implementação da aplicação, esta se utilizará dos \textit{logs} de acesso dos servidores de aplicação, dados climáticos, geográficos e geopolíticos como conjunto de entrada de dados. Utilizará de recursos de aprendizagem de máquina para classificar e predizer os perfis de usuários derivados a partir dos padrões frequentes formados a partir da entrada.   
+Sendo assim, com o objetivo final da formulação do método, este se utilizará dos \textit{logs} de acesso das aplicações digitais, dados climáticos, geográficos e geopolíticos como conjunto de entrada de dados. Utilizará de recursos de aprendizagem de máquina para classificar e predizer os perfis de clientes derivados a partir dos padrões frequentes formados a partir da entrada.   
 
 \section{Aprendizagem de máquina}
 
 Em aprendizado de máquina, uma funcionalidade é uma propriedade mensurável, então, transformações aplicadas de uma representação de dados para outra são úteis dado o nível de abstração. Essas transformações devem ser efetivamente aproveitada por algoritmos de aprendizado, que pressupõem que o conjunto de dados a ser usado no treinamento foi previamente construído por meio de um processo de engenharia de características \cite{bezerraintroduccao}.
 
-As características dos usuários serão extraídos dos acessos captados pelo \textit{website} e captados de outras fontes externas, como temperatura local de onde partiu o acesso, índice de umidade relativa do ar, renda per capta da região, etc. Esses dados serão usados como fatores classificatórios para uma categoria de perfil de usuário durante o teste A/B. O intuito é que a aplicação desenvolvida seja capaz de aprender a identificar essas características observando o conjunto de funcionalidades testada no momento.
+As características dos clientes serão extraídas dos acessos captados pelas aplicações digitais e captados de outras fontes externas, como temperatura local de onde partiu o acesso, índice de umidade relativa do ar, renda per capta da região, etc. Esses dados serão usados como fatores classificatórios para uma categoria de perfil de usuário durante o teste A/B. O intuito é que a aplicação desenvolvida seja capaz de aprender a identificar essas características observando o conjunto de funcionalidades testada no momento.
 
-Será computado se as funcionalidades da versão de tratamento estão causando envolvimento positivo ou negativo para cada classe de usuários. Esse envolvimento será calculado de acordo com o tempo de permanência do usuário na página, número de cliques gerados e clique no botão de fechamento de pedido.
+Será computado se as funcionalidades da versão de tratamento estão causando envolvimento positivo ou negativo para cada classe de clientes. Esse envolvimento será calculado de acordo com o tempo de permanência do usuário na página, número de cliques gerados e clique no botão de fechamento de pedido.
 
 \section{Resultados esperados}
 
 \begin{itemize}[label={\checkmark}]
-    \item Desenvolver a aplicação de forma plena e satisfatória;
-    \item Sugerir melhorias (\textit{features}) que aumentem o envolvimento de um determinado perfil de usuário;
+    \item Desenvolver o método de forma plena e satisfatória;
+    \item Sugerir melhorias (\textit{features}) que aumentem o envolvimento de um determinado perfil de cliente;
     \item Listar os públicos de maior envolvimento e relevância apontados por um determinado sistema tratamento;
     \item Listar novos perfis que se formam;
     \item Listar perfis que tendem a desaparecer;
