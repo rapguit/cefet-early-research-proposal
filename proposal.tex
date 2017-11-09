@@ -44,10 +44,10 @@
 
 \section{Introdução}
 
-O Teste A/B é uma técnica de \textit{design} para decidir quais características causam maior aprovação dos usuários entre duas variantes: A e B. Duas versões de um mesmo \textit{website} são disponibilizados para seus usuários finais, onde para cada um é exibido apenas uma das versões, assim, é avaliado o grau de interesse e envolvimento de cada versão, medindo e avaliando a aceitação das funcionalidades.
+O teste A/B é uma técnica de \textit{design} para decidir quais características causam maior aprovação dos usuários entre duas variantes: A e B. Duas versões de um mesmo \textit{website} são disponibilizados para seus usuários finais, onde para cada um é exibido apenas uma das versões, assim, é avaliado o grau de interesse e envolvimento de cada versão, medindo e avaliando a aceitação das funcionalidades.
 
 A configuração experimental mais simples é avaliar um fator com dois níveis, um controle (versão A) e um tratamento (versão B). O controle é normalmente a versão padrão e o tratamento é a mudança que é testada. Essa configuração é comumente chamada de teste A/B. É comum ser estendido por vários níveis, muitas vezes referidos como testes de divisão A / B / N. Um experimento com
-múltiplos fatores são referidos como \textit{Multivariable} (ou Multivariável) \cite{kohavi2010online}. A Figura \ref{fig:onlineExp1} demonstra a estrutura mais comum de um teste A/B.
+múltiplos fatores são referidos como \textit{multivariable} (em português, multivariável) \cite{kohavi2010online}. A Figura \ref{fig:onlineExp1} demonstra a estrutura mais comum de um teste A/B.
 
 \begin{figure}[ht]
 \centering
@@ -56,7 +56,7 @@ múltiplos fatores são referidos como \textit{Multivariable} (ou Multivariável
 \label{fig:onlineExp1}
 \end{figure}
 
-O mapa \textit{heatmaps} destaca a influência do conteúdo da página onde as pessoas tendem a concentrar a visão, conforme a Figura \ref{fig:heatmap1}. Este é apenas alguns dos muitos métodos possíveis para entender as interações do usuário, e desenvolver hipóteses para testes controlados. Estudos de tração ocular mostram como as pessoas guiam sua atenção em uma página \cite{goward:13}.
+O mapa \textit{heatmaps} destaca a influência do conteúdo da página onde as pessoas tendem a concentrar a visão, conforme a Figura \ref{fig:heatmap1}. Este é apenas alguns dos muitos métodos possíveis para entender as interações do usuário e desenvolver hipóteses para testes controlados. Estudos de tração ocular mostram como as pessoas guiam sua atenção em uma página \cite{goward:13}.
 
 \begin{figure}[ht]
 \centering
@@ -65,15 +65,15 @@ O mapa \textit{heatmaps} destaca a influência do conteúdo da página onde as p
 \label{fig:heatmap1}
 \end{figure}
 
-Através das informações do Teste A/B, mapa \textit{heatmaps} e outras provenientes dos dados de acesso capturados das entradas das requisições na página, como \textit{logs} das máquinas servidoras, podemos extrair, avaliar e categorizar automaticamente o perfil do usuário que acessa o \textit{website}.
+Através das informações do teste A/B, mapa \textit{heatmaps} e outras provenientes dos dados de acesso capturados das entradas das requisições na página, como \textit{logs} das máquinas servidoras, podemos extrair, avaliar e categorizar automaticamente o perfil do usuário que acessa o \textit{website}.
 
-Outras fontes de dados como a temperatura da cidade que o usuário está acessando, se está chovendo ou não, a hora do dia, a média da renda per capita da região, se há algum acontecimento relevante no dia como shows ou notícias, pode influenciar também no processo de categorização.
+Outras fontes de dados como a temperatura da cidade que o usuário está acessando, se está chovendo ou não, a hora do dia, a média da renda \textit{per capita} da região, se há algum acontecimento relevante no dia como eventos, shows ou notícias, pode influenciar também no processo de categorização.
 
-Após esta análise em \textit{BigData} de todas essas entradas, será possível identificar quais os perfis de usuários que mais estão sendo influenciados positivamente ou negativamente, para a dada hipótese testada sobre as funcionalidades incluídas no \textit{website}.
+Após esta análise em \textit{Big Data} de todas essas entradas, será possível identificar quais os perfis de usuários que mais estão sendo influenciados positivamente ou negativamente, para a dada hipótese testada sobre as funcionalidades incluídas no \textit{website}.
 
 \section{Objetivos}
 \subsection{Objetivo Geral}
-Desenvolver uma aplicação para interpretar os resultados dos testes A/B, classificando os usuários pelas características dos dados durante o acesso, auxiliando, assim, o dono do negócio a direcionar sua marca a um ou mais públicos alvos.
+Desenvolver uma aplicação para interpretar os resultados dos testes A/B, classificando os usuários pelas características dos dados durante o acesso, auxiliando, assim, o dono do negócio a direcionar sua marca a um ou mais públicos-alvo.
 
 \subsection{Objetivo Específico}
 \begin{itemize}
@@ -90,11 +90,11 @@ Sendo assim, com o objetivo final da implementação da aplicação, esta se uti
 
 \section{Aprendizagem de máquina}
 
-Em aprendizado de máquina, uma característica (em inglês, \textit{feature}) é uma propriedade mensurável de um fenômeno de interesse. Nesse contexto, são úteis transformações de uma representação de dados para outra em um nível conceitual mais alto e que possa ser efetivamente aproveitada por algoritmos de aprendizado. Tradicionalmente, algoritmos de aprendizado de máquina pressupõem que o conjunto de dados a ser usado no treinamento foi previamente construído por meio de um processo de engenharia de características \cite{bezerraintroduccao}.
+Em aprendizado de máquina, uma funcionalidade é uma propriedade mensurável, então, transformações aplicadas de uma representação de dados para outra são úteis dado o nível de abstração. Essas transformações devem ser efetivamente aproveitada por algoritmos de aprendizado. Algoritmos de aprendizado de máquina pressupõem que o conjunto de dados a ser usado no treinamento foi previamente construído por meio de um processo de engenharia de características \cite{bezerraintroduccao}.
 
 As características dos usuários serão extraídos dos acessos captados pelo \textit{website} e captados de outras fontes externas, como temperatura local de onde partiu o acesso, índice de umidade relativa do ar, renda per capta da região, etc. Esses dados serão usados como fatores classificatórios para uma categoria de perfil de usuário durante o teste A/B. O intuito é que a aplicação desenvolvida seja capaz de aprender a identificar essas características observando o conjunto de funcionalidades testada no momento.
 
-Será computado se as funcionalidades do sistema tratamento estão causando envolvimento positivo ou negativo para cada classe de usuários. Esse envolvimento será calculado de acordo com o tempo de permanência do usuário na página, número cliques gerados e clique no botão de fechamento de pedido.
+Será computado se as funcionalidades da versão de tratamento estão causando envolvimento positivo ou negativo para cada classe de usuários. Esse envolvimento será calculado de acordo com o tempo de permanência do usuário na página, número de cliques gerados e clique no botão de fechamento de pedido.
 
 \section{Resultados esperados}
 
