@@ -44,11 +44,18 @@ O Teste A/B é uma técnica de \textit{design} para decidir quais característic
 A configuração experimental mais simples é avaliar um fator com dois níveis, um controle (versão A) e um tratamento (versão B). O controle é normalmente a versão padrão e o tratamento é a mudança que é testada. Essa configuração é comumente chamada de teste A/B. É comum ser estendido por vários níveis, muitas vezes referidos como testes de divisão A / B / N. Um experimento com
 múltiplos fatores são referidos como \textit{Multivariable} (ou Multivariável) \cite{kohavi2010online}.
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=.8\textwidth]{fig2.png}
+\caption{Estrutura em alto nível de um experimento online. Usuários são divididos entre o sistema de controle e de tratamento. Interações dos usuários são instrumentadas, analisadas e comparadas. Análise no fim do experimento. Adaptado de \cite{kohavi2010online}.}
+\label{fig:onlineExp1}
+\end{figure}
+
 O mapa \textit{heatmaps} destaca a influência do conteúdo da página onde as pessoas tendem a concentrar a visão, conforme a Figura \ref{fig:heatmap1}. Este é apenas alguns dos muitos métodos possíveis para entender as interações do usuário, e desenvolver hipóteses para testes controlados. Estudos de tração ocular mostram como as pessoas guiam sua atenção em uma página \cite{goward:13}.
 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=.8\textwidth]{fig1.jpg}
+\includegraphics[width=.5\textwidth]{fig1.jpg}
 \caption{Exemplo de heatmap. Áreas avermelhadas caracterizam zona de maior atenção pelos usuários. Adaptado de \cite{goward:13}.}
 \label{fig:heatmap1}
 \end{figure}
